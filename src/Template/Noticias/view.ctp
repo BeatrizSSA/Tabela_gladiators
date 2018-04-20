@@ -21,12 +21,16 @@
             <td><?= h($noticia->tipo) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Data') ?></th>
-            <td><?= h($noticia->data) ?></td>
+            <th scope="row"><?= __('Titulo') ?></th>
+            <td><?= h($noticia->titulo) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Bairro') ?></th>
             <td><?= h($noticia->bairro) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Jornal') ?></th>
+            <td><?= h($noticia->jornal) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Link') ?></th>
@@ -35,6 +39,10 @@
         <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($noticia->id) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Data') ?></th>
+            <td><?= h($noticia->data) ?></td>
         </tr>
     </table>
 </div>

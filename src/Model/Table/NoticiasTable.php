@@ -49,25 +49,36 @@ class NoticiasTable extends Table
 
         $validator
             ->scalar('tipo')
-            ->maxLength('tipo', 50)
+            ->maxLength('tipo', 255)
             ->requirePresence('tipo', 'create')
             ->notEmpty('tipo');
 
         $validator
-            ->scalar('data')
-            ->maxLength('data', 50)
+            ->scalar('titulo')
+            ->maxLength('titulo', 255)
+            ->requirePresence('titulo', 'create')
+            ->notEmpty('titulo');
+
+        $validator
+            ->date('data')
             ->requirePresence('data', 'create')
             ->notEmpty('data');
 
         $validator
             ->scalar('bairro')
-            ->maxLength('bairro', 50)
+            ->maxLength('bairro', 255)
             ->requirePresence('bairro', 'create')
             ->notEmpty('bairro');
 
         $validator
+            ->scalar('jornal')
+            ->maxLength('jornal', 255)
+            ->requirePresence('jornal', 'create')
+            ->notEmpty('jornal');
+
+        $validator
             ->scalar('link')
-            ->maxLength('link', 50)
+            ->maxLength('link', 255)
             ->requirePresence('link', 'create')
             ->notEmpty('link');
 

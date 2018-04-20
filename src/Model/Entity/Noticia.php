@@ -8,8 +8,10 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $tipo
- * @property string $data
+ * @property string $titulo
+ * @property \Cake\I18n\FrozenDate $data
  * @property string $bairro
+ * @property string $jornal
  * @property string $link
  */
 class Noticia extends Entity
@@ -26,8 +28,10 @@ class Noticia extends Entity
      */
     protected $_accessible = [
         'tipo' => true,
+        'titulo' => true,
         'data' => true,
         'bairro' => true,
+        'jornal' => true,
         'link' => true
     ];
 }

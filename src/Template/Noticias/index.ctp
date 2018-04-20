@@ -15,10 +15,11 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('tipo') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('titulo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('data') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('bairro') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('jornal') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('link') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
@@ -26,10 +27,11 @@
         <tbody>
             <?php foreach ($noticias as $noticia): ?>
             <tr>
-                <td><?= $this->Number->format($noticia->id) ?></td>
                 <td><?= h($noticia->tipo) ?></td>
+                <td><?= h($noticia->titulo) ?></td>
                 <td><?= h($noticia->data) ?></td>
                 <td><?= h($noticia->bairro) ?></td>
+                <td><?= h($noticia->jornal) ?></td>
                 <td><?= h($noticia->link) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $noticia->id]) ?>

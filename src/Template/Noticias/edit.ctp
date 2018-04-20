@@ -22,8 +22,10 @@
         <legend><?= __('Edit Noticia') ?></legend>
         <?php
             echo $this->Form->control('tipo');
+            echo $this->Form->control('titulo');
             echo $this->Form->control('data');
             echo $this->Form->control('bairro');
+            echo $this->Form->control('jornal');
             echo $this->Form->control('link');
         ?>
     </fieldset>
