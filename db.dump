@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
+--
+-- Host: localhost    Database: my_app
+-- ------------------------------------------------------
+-- Server version	5.7.21-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `noticias`
+--
+
+DROP TABLE IF EXISTS `noticias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `noticias` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `tipo` varchar(255) NOT NULL,
+  `titulo` varchar(255) NOT NULL,
+  `data` date NOT NULL,
+  `bairro` varchar(255) NOT NULL,
+  `jornal` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `noticias`
+--
+
+LOCK TABLES `noticias` WRITE;
+/*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
+INSERT INTO `noticias` VALUES (1,'Assassinato','CAPITÃO REFORMADO DA PM É ASSASSINADO EM BRIGA DE TRÂNSITO EM IGARASSU','2018-03-18',' Nova Cruz - ocorreu na estrada de mangue seco','Informe PE','http://www.informepe.com/capitao-reformado-da-pm-e-assassinado-em-briga-de-transito-em-igarassu/'),(3,'Latrocínio','PM É ASSASSINADO A TIROS E TEM ARMA ROUBADA EM IGARASSU','2018-01-27','Rua da Assembleia, no bairro de Cruz de Rebouças','Informe PE','http://www.informepe.com/pm-e-assassinado-tiros-e-tem-arma-roubada-em-igarassu/'),(4,'Espancamento','Suspeito de matar enteada é linchado em Igarassu','2018-02-16','Sítio do Marcos','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2018/02/16/suspeito-de-matar-enteada-e-linchado-em-igarassu-328103.php'),(5,'Assassinato','Jovem é assassinado na zona rural de Igarassu','2018-03-22','loteamento Bela Vista,','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2018/03/22/jovem-e-assassinado-na-zona-rural-de-igarassu-332349.php'),(6,'Assassinato','Adolescente de 15 anos é assassinada a tiros em Igarassu','2017-12-18','centro de igarassu','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2017/12/18/adolescente-de-15-anos-e-assassinada-a-tiros-em-igarassu-320430.php'),(7,'Assassinato','Ex-presidiário é morto a tiros após ser solto em Igarassu','2018-01-12',' Inhamã, próximo ao atacadão','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2018/01/12/ex-presidiario-e-morto-a-tiros-apos-ser-solto-em-igarassu-323708.php'),(8,'Feminicídio','Mulher morre baleada em Igarassu, e polícia não descarta feminicídio','2017-12-25',' Centro de Igarassu','Diário de Pernambuco','http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2017/12/25/interna_vidaurbana,735852/mulher-morre-baleada-em-igarassu-e-policia-nao-descarta-feminicidio.shtml'),(9,'Atropelamento','Idoso morre atropelado na BR-101 em Igarassu','2018-01-13','BR-101, na altura do Km 43,4','Diário de Pernambuco','http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2018/01/13/interna_vidaurbana,738000/idoso-morre-atropelado-na-br-101-em-igarassu.shtml'),(10,'Assalto','Casa da cantora sertaneja Flávia Reis é invadida em Igarassu','2018-04-19','Cruz de Rebolças','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2018/04/19/casa-da-cantora-sertaneja-flavia-reis-e-invadida-em-igarassu-336016.php'),(11,'Assassinato','Homem é morto com quatro tiros em Igarassu','2017-09-06','Bela Vista','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2017/09/07/homem-e-morto-com-quatro-tiros-em-igarassu-305605.php'),(12,'Assassinato','Dois homens são assassinados em Igarassu','2017-10-26','Monjope','Folha PE','https://www.folhape.com.br/noticias/noticias/cotidiano/2017/10/26/NWS,46482,70,449,NOTICIAS,2190-DOIS-HOMENS-SAO-ASSASSINADOS-IGARASSU.aspx'),(13,'Assalto','Polícia recupera caminhonete roubada que era utilizada para crimes em Igarassu','2017-09-20','Cruz de Rebouças','Diário de Pernambuco','http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2017/09/20/interna_vidaurbana,723396/policia-recupera-caminhonete-roubado-que-era-utilizada-para-crimes-em.shtml'),(14,'Assassinato','Jovem é assassinada a tiros no centro histórico de Igarassu','2018-01-04','Centro histórico de Igarassu, Rua Maria Bethânia ','TV Jornal','http://m.tvjornal.ne10.uol.com.br/noticia/ultimas/2018/01/04/jovem-e-assassinada-a-tiros-no-centro-historico-de-igarassu-37506.php'),(15,'Assassinato','Homem é perseguido e morto a tiros em Igarassu','2017-11-14','Cruz de Rebolças, Rua Joaquim Figueiras Galvão','Jornal do Comércio - JC','http://jconline.ne10.uol.com.br/canal/cidades/policia/noticia/2017/11/15/homem-e-perseguido-e-morto-a-tiros-em-igarassu-315934.php'),(16,'Crime passional','Polícia Civil investiga crime supostamente cometido por ciúmes, em Igarassu','2017-12-25','Centro de Igarassu','Folha PE','https://www.folhape.com.br/noticias/noticias/cotidiano/2017/12/25/NWS,53412,70,449,NOTICIAS,2190-POLICIA-CIVIL-INVESTIGA-CRIME-SUPOSTAMENTE-COMETIDO-POR-CIUMES-IGARASSU.aspx'),(17,'Assassinato','Jovem é assassinado a tiros dentro de bar em Igarassu','2017-07-08','Cruz de Rebolças','TV Jornal','http://tvjornal.ne10.uol.com.br/noticia/ultimas/2017/08/07/jovem-e-assassinado-a-tiros-dentro-de-bar-em-igarassu-32494.php');
+/*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-04-27 14:05:29
